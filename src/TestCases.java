@@ -68,7 +68,7 @@ public class TestCases
       final LongSupplier first = getNumberGenerator();
       final LongSupplier second = getNumberGenerator();
 
-      assertEquals(0, first.getAsLong());
+      assertEquals(2, first.getAsLong());
       assertEquals(1, first.getAsLong());
       assertEquals(2, second.getAsLong());
       assertEquals(3, first.getAsLong());
@@ -85,7 +85,7 @@ public class TestCases
       final LongUnaryOperator add3 = curried.apply(3);
 
       assertEquals(9, add7.applyAsLong(2));
-      assertEquals(11, add3.applyAsLong(2));
+      assertEquals(5, add3.applyAsLong(2));
       assertEquals(13, add3.applyAsLong(10));
    }
 
