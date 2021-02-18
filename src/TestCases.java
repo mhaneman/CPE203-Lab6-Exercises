@@ -68,13 +68,13 @@ public class TestCases
       final LongSupplier first = getNumberGenerator();
       final LongSupplier second = getNumberGenerator();
 
+      assertEquals(0, first.getAsLong());
       assertEquals(2, first.getAsLong());
-      assertEquals(1, first.getAsLong());
-      assertEquals(2, second.getAsLong());
-      assertEquals(3, first.getAsLong());
       assertEquals(4, second.getAsLong());
-      assertEquals(5, first.getAsLong());
-      assertEquals(6, second.getAsLong());
+      assertEquals(6, first.getAsLong());
+      assertEquals(8, second.getAsLong());
+      assertEquals(10, first.getAsLong());
+      assertEquals(12, second.getAsLong());
    }
 
    @Test
